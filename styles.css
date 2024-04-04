@@ -1,56 +1,60 @@
 .headline {
-    font-size: 30px; font-weight: bold;
-    margin-bottom: 15px; text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
 }
 .desktop-menu {
-    text-align: center;
-    display: block;
+  text-align: center;
+  display: block;
 }
 .mobile-menu {
-    display: none;
+  display: none;
 }
 .list {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 .product {
-    flex: none; width: 280px; margin: 10px;
-    background-color: pink;
+  flex: none;
+  width: 280px;
+  margin: 10px;
+  background-color: pink;
 }
 
-@media (max-width:1250px) {
-    /* 平板 (桌機最小為1280) */
-    .list {
-        flex-wrap: wrap; /* 允許元件往下掉 */
-    }
-    .product {
-        width: 45%;
-    }
+@media (max-width: 1250px) {
+  /* 平板 (桌機最小為1280) */
+  .list {
+    flex-wrap: wrap; /* 允許元件往下掉 */
+  }
+  .product {
+    width: 45%;
+  }
 }
 
-@media (max-width:500px) {
-    /* 手機 */
-    /* 最小手機為360 */
-    .headline {
-        font-size: 20px;
-    }
-    .desktop-menu {
-        display: none;
-    }
-    .mobile-menu {
-        display: flex;
-        justify-content: center;
-    }
-    .mobile-menu-inside {
-        flex: none;
-        width: 90%;
-        margin: 10px;
-    }
-    .image-icon {
-        flex: none;
-        width: 20px;
-    }
-    .product {
-        width: 90%;
-    }
+@media (max-width: 750px) {
+  /* 手機 */
+  /* 最小手機為360 */
+  .headline {
+    font-size: 20px;
+  }
+  .desktop-menu {
+    display: none;
+  }
+  .mobile-menu {
+    display: flex;
+    justify-content: center;
+  }
+  .mobile-menu-inside {
+    flex: none;
+    width: 90%;
+    margin: 10px;
+  }
+  .image-icon {
+    flex: none;
+    width: 20px;
+  }
+  .product {
+    width: 90%;
+  }
 }
