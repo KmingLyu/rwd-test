@@ -22,15 +22,14 @@
   background-color: pink;
 }
 
-@media screen and (max-width: 1250px) {
-  /* 平板 (桌機最小為1280) */
+/* @media screen and (max-width: 1250px) {
   .list {
-    flex-wrap: wrap; /* 允許元件往下掉 */
+    flex-wrap: wrap; 
   }
   .product {
     width: 45%;
   }
-}
+} */
 
 @media screen and (max-width: 768px) {
   /* 手機 */
