@@ -34,6 +34,9 @@
 @media screen and (max-width: 768px) {
   /* 手機 */
   /* 最小手機為360 */
+  .list {
+    flex-wrap: wrap;
+  }
   .headline {
     font-size: 20px;
   }
